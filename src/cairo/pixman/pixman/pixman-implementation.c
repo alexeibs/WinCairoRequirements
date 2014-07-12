@@ -63,6 +63,10 @@ typedef struct
     } cache [N_CACHED_FAST_PATHS];
 } cache_t;
 
+#if defined(_MSC_VER)
+#	include <windows.h>
+#endif
+
 PIXMAN_DEFINE_THREAD_LOCAL (cache_t, fast_path_cache);
 
 pixman_bool_t
