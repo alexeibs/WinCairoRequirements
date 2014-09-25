@@ -95,10 +95,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WITH_SIMD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo/build;C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/src/libjpeg-turbo/build;$(SolutionDir)/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo/build;C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/src/libjpeg-turbo/build;$(SolutionDir)/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -138,10 +138,10 @@ xcopy /Y /R "$(ProjectDir)transupp.h" "$(SolutionDir)include"</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WITH_SIMD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo/build;C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/src/libjpeg-turbo/build;$(SolutionDir)/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo/build;C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/src/libjpeg-turbo/build;$(SolutionDir)/src/libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -433,7 +433,7 @@ xcopy /Y /R "$(ProjectDir)transupp.h" "$(SolutionDir)include"</Command>
     </Object>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Development/Projects/WinCairoRequirements/src/libjpeg-turbo/build/simd/simd.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/src/libjpeg-turbo/build/simd/simd.vcxproj">
       <Project>53E75EB5-55C8-47B8-83AD-AB7A07F69818</Project>
     </ProjectReference>
   </ItemGroup>

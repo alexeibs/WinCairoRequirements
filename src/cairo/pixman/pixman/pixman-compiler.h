@@ -108,10 +108,9 @@
 #   define PIXMAN_GET_THREAD_LOCAL(name)				\
     (&name)
 
-#elif defined(__MINGW32__)
+#elif defined(__MINGW32__) || defined(_MSC_VER)
 
 #   define _NO_W32_PSEUDO_MODIFIERS
-#   include <windows.h>
 
 #   define PIXMAN_DEFINE_THREAD_LOCAL(type, name)			\
     static volatile int tls_ ## name ## _initialized = 0;		\
